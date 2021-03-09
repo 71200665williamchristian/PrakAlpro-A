@@ -1,0 +1,25 @@
+#Nama   : William Christian
+#NIM    : 71200665
+#Grup A
+print("="*8,"Program Urut Angka","="*8)
+print("Anda dapat memilih ingin hasil data menjadi :")
+print("1. Horizontal")
+print("2. Vertikal")
+pilihan = int(input("Masukkan pilihan Anda : "))
+try:
+    if pilihan == 1:
+        batas_atas = int(input("Masukkan batas atas : "))
+        batas_bawah = int(input("Masukkan batas bawah : "))
+        selisih_jarak = int(input("Masukkan jarak antar bilangan : "))
+        for i in range(batas_bawah,batas_atas,selisih_jarak):
+            print(i)
+    elif pilihan == 2:
+        batas_atas = int(input("Masukkan batas atas : "))
+        batas_bawah = int(input("Masukkan batas bawah : "))
+        selisih_jarak = int(input("Masukkan jarak antar bilangan : "))
+        for i in range(batas_bawah,batas_atas,selisih_jarak):
+             print(i,'\t',end=' ')
+    else:
+        print("Maaf kami tidak menyediakan pilihan lain")
+except:
+    print("Maaf yang Anda inputkan tidak valid")
